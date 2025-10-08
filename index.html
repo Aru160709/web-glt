@@ -1,140 +1,269 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Karang Taruna Graha Laksana Tidar</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <!-- navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark px-4 py-3 fixed-top">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="index.html">Karang Taruna GLT</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-            <li class="nav-item"><a class="nav-link" href="#projects">Acara</a></li>
-            <li class="nav-item"><a class="nav-link" href="#lokasi">Lokasi</a></li>
-            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-          </ul>
-          <ul class="navbar-nav ms-3">
-            <li class="nav-item"><a class="nav-link" href="https://www.instagram.com/karangtaruna.glt?utm_source=ig_web_button_share_sheet&igsh=ZW4xOGx6NGJhc2No"><i class="bi bi-instagram"></i>
-            <li class="nav-item"><a class="nav-link" href="https://www.tiktok.com/@karangtaruna.glt?is_from_webapp=1&sender_device=pc"><i class="bi bi-tiktok"></i>
-            <li class="nav-item"><a class="nav-link" href="#"><i class="bi bi-twitter"></i></a></li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-<!-- end navbar -->
-    <section class="hero container">
-      <div class="hero-text">
-        <h1 class="fw-bold">Karang Taruna <p>Graha Laksana Tidar</p></h1>
-        <p class="text-secondary">
-        coming soon and still in the works,developernya sibuk</p>
-        <!-- <a href="#about" class="btn btn-success mt-3 btn-started">Let's get started <i class="bi bi-arrow-right"></i></a> -->
-      </div>
-      <div class="hero-image">
-        <img src="Screenshot 2025-07-28 155408.png" alt="Profile Picture" />
-      </div>
-    </section>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Karang Taruna Graha Laksana Tidar</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="bg-gradient-to-br from-green-50 via-white to-emerald-50 text-gray-800">
 
-
-<!-- About 
-    <section id="about">
-      <div class="container">
-        <div class="row text-center mb-3">
-          <div class="col">
-            <h2>Tentang Kami</h2>
-          </div>
+  <!-- Navbar -->
+  <header class="fixed w-full z-50 navbar-blur shadow-lg transition-all duration-300">
+    <div class="container mx-auto flex justify-between items-center py-4 px-6">
+      <div class="flex items-center space-x-3">
+        <div class="w-10 h-10 bg-gradient-to-br from-green-700 to-emerald-600 rounded-lg flex items-center justify-center">
+          <span class="text-white font-bold text-xl">GLT</span>
         </div>
-        <div class="row justify-content-center fs-5 text-center">
-          <div class="col-md-4">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam autem beatae quae rerum ipsum cupiditate modi nostrum vel, enim aspernatur veniam excepturi recusandae perspiciatis ab voluptatibus animi dolor. Expedita cumque quidem a, delectus modi dolorem aliquid quas est at assumenda ut rem perferendis quo possimus pariatur fuga necessitatibus. Deleniti, hic fugit earum dolorum recusandae dolores?</p>
-          </div>
-          <div class="col-md-4">
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis officia consequuntur assumenda aliquid deserunt a voluptatum maxime aperiam blanditiis? Magni culpa, repudiandae repellendus alias soluta in, ea, pariatur illo quo esse vero cupiditate at molestias? Ab, at. Magnam culpa provident labore quasi doloribus ratione laborum dolor. Architecto odit dignissimos ab aspernatur! Reiciendis explicabo nemo nesciunt.</p>
-          </div>
+        <h1 class="text-xl md:text-2xl font-bold bg-gradient-to-r from-green-700 to-emerald-600 bg-clip-text text-transparent">Karang Taruna GLT</h1>
+      </div>
+      
+      <nav class="hidden md:flex space-x-8 font-medium">
+        <a href="#" class="hover:text-green-600 transition-colors duration-300 relative group">
+          Home
+          <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-green-600 transition-all duration-300 group-hover:w-full"></span>
+        </a>
+        <a href="#about" class="hover:text-green-600 transition-colors duration-300 relative group">
+          About
+          <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-green-600 transition-all duration-300 group-hover:w-full"></span>
+        </a>
+        <a href="#gallery" class="hover:text-green-600 transition-colors duration-300 relative group">
+          Galeri
+          <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-green-600 transition-all duration-300 group-hover:w-full"></span>
+        </a>
+        <a href="#lokasi" class="hover:text-green-600 transition-colors duration-300 relative group">
+          Lokasi
+          <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-green-600 transition-all duration-300 group-hover:w-full"></span>
+        </a>
+        <a href="#contact" class="hover:text-green-600 transition-colors duration-300 relative group">
+          Contact
+          <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-green-600 transition-all duration-300 group-hover:w-full"></span>
+        </a>
+      </nav>
+
+      <button id="menuToggle" class="md:hidden text-green-700 focus:outline-none">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+    </div>
+
+    <div id="mobileMenu" class="mobile-menu md:hidden bg-white border-t border-gray-200">
+      <nav class="flex flex-col space-y-2 py-4 px-6">
+        <a href="#" class="mobile-link hover:text-green-600 py-2 transition-colors">Home</a>
+        <a href="#about" class="mobile-link hover:text-green-600 py-2 transition-colors">About</a>
+        <a href="#gallery" class="mobile-link hover:text-green-600 py-2 transition-colors">Galeri</a>
+        <a href="#lokasi" class="mobile-link hover:text-green-600 py-2 transition-colors">Lokasi</a>
+        <a href="#contact" class="mobile-link hover:text-green-600 py-2 transition-colors">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="container mx-auto px-6 pt-32 pb-20 md:pt-40">
+    <div class="grid md:grid-cols-2 gap-12 items-center">
+      <div class="space-y-6 animate-fade-in-up">
+        <h1 class="text-4xl md:text-6xl font-bold leading-tight">
+          <span class="bg-gradient-to-r from-green-700 to-emerald-600 bg-clip-text text-transparent">Karang Taruna</span>
+          <br>
+          <span class="text-gray-800">Graha Laksana Tidar</span>
+        </h1>
+        <p class="text-lg text-gray-600 leading-relaxed">
+          Organisasi kepemudaan yang bergerak di bidang kesejahteraan sosial, mengembangkan potensi pemuda dalam pembangunan masyarakat.
+        </p>
+        <div class="flex flex-wrap gap-4">
+          <a href="#gallery" class="px-8 py-3 bg-gradient-to-r from-green-600 to-emerald-600 hover:from-green-700 hover:to-emerald-700 text-white rounded-xl font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg">
+            Lihat Galeri
+          </a>
+          <a href="#contact" class="px-8 py-3 border-2 border-green-600 text-green-600 hover:bg-green-600 hover:text-white rounded-xl font-semibold transition-all duration-300">
+            Hubungi Kami
+          </a>
         </div>
       </div>
-    </section>
- Akhir About -->
-
-    <!-- Projects 
-    <section id="projects">
-      <div class="container">
-        <div class="row text-center mb-3">
-          <div class="col">
-            <h2>Projects</h2>
-          </div>
-        </div>
-        <div class="row justify-content-center">
-          <div class="col-md-4 mb-3">
-            <div class="card project-tile">
-              <img src="IMG_2525.JPG" class="card-img-top" alt="Project 1" />
-              <div class="card-body">
-                <h5 class="card-title">Gerak Jalan</h5>
-                <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus neque dolor, quaerat ab obcaecati at necessitatibus molestias, ex culpa quia unde debitis fuga veritatis quo delectus sed autem totam excepturi.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 mb-3">
-            <div class="card project-tile">
-              <img src="IMG_2400.JPG" class="card-img-top" alt="Project 2" />
-              <div class="card-body">
-                <h5 class="card-title">Malam Tasyakuran</h5>
-                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem fugiat natus illum, maxime nemo vitae commodi velit dolores voluptatum, explicabo sunt. Accusamus doloremque vel nesciunt officia at error rerum praesentium.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 mb-3">
-            <div class="card project-tile">
-              <img src="WhatsApp Image 2025-07-28 at 20.50.43_7ad5e268.jpg" class="card-img-top" alt="Project 3" />
-              <div class="card-body">
-                <h5 class="card-title">Lomba</h5>
-                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus tenetur officia consequuntur suscipit tempora dolores officiis, unde temporibus. Dolorum, deleniti molestias! Odit, ipsa explicabo quia deserunt sapiente numquam soluta iure.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 mb-3">
-            <div class="card project-tile">
-              <img src="IMG_2400.JPG" class="card-img-top" alt="Project 4" />
-              <div class="card-body">
-                <h5 class="card-title">Landing Page</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 mb-3">
-            <div class="card project-tile">
-              <img src="IMG_2400.JPG" class="card-img-top" alt="Project 5" />
-              <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
- Akhir Projects -->
-
-<!-- Lokasi 
-<section id="lokasi" class="my-5">
-  <div class="container">
-    <div class="row text-center mb-3">
-      <div class="col">
-        <h2>Lokasi Kami</h2>
+      <div class="animate-float">
+        <img src="logo.png" alt="Karang Taruna GLT" class="w-full rounded-3xl shadow-2xl" />
       </div>
     </div>
-    <div class="row justify-content-center">
-      <div class="col-md-10">
-        <div class="map-responsive">
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="container mx-auto px-6 py-20">
+    <div class="text-center mb-16">
+      <h2 class="text-4xl md:text-5xl font-bold bg-gradient-to-r from-green-700 to-emerald-600 bg-clip-text text-transparent mb-4">Tentang Kami</h2>
+      <div class="w-24 h-1 bg-gradient-to-r from-green-600 to-emerald-600 mx-auto rounded-full"></div>
+    </div>
+    
+    <div class="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+      <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300">
+        <div class="w-16 h-16 bg-gradient-to-br from-green-600 to-emerald-600 rounded-xl flex items-center justify-center mb-6">
+          <i class="bi bi-people-fill text-3xl text-white"></i>
+        </div>
+        <h3 class="text-2xl font-bold text-green-700 mb-4">Visi Kami</h3>
+        <p class="text-gray-600 leading-relaxed">
+          Menjadi organisasi kepemudaan yang aktif, kreatif, dan inovatif dalam mengembangkan potensi pemuda untuk kesejahteraan masyarakat Graha Laksana Tidar.
+        </p>
+      </div>
+      
+      <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300">
+        <div class="w-16 h-16 bg-gradient-to-br from-green-600 to-emerald-600 rounded-xl flex items-center justify-center mb-6">
+          <i class="bi bi-bullseye text-3xl text-white"></i>
+        </div>
+        <h3 class="text-2xl font-bold text-green-700 mb-4">Misi Kami</h3>
+        <p class="text-gray-600 leading-relaxed">
+          Memberdayakan pemuda melalui berbagai kegiatan sosial, olahraga, dan budaya untuk menciptakan generasi yang berkualitas dan peduli lingkungan sekitar.
+        </p>
+      </div>
+    </div>
+  </section>
+
+<!-- 
+  <section id="gallery" class="container mx-auto px-6 py-20">
+    <div class="text-center mb-16">
+      <h2 class="text-4xl md:text-5xl font-bold bg-gradient-to-r from-green-700 to-emerald-600 bg-clip-text text-transparent mb-4">Galeri Kegiatan</h2>
+      <div class="w-24 h-1 bg-gradient-to-r from-green-600 to-emerald-600 mx-auto rounded-full"></div>
+      <p class="text-gray-600 mt-4 text-lg">Dokumentasi kegiatan Karang Taruna GLT</p>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
+      
+
+      <div class="gallery-item cursor-pointer bg-white shadow-lg rounded-2xl overflow-hidden hover:scale-105 hover:shadow-2xl transition-all duration-300 glow-hover group"
+           data-title="Gerak Jalan HUT RI"
+           data-img="galeri/gerakjalan.JPG"
+           data-desc="Kegiatan gerak jalan dalam rangka memperingati HUT Kemerdekaan RI ke-79. Acara ini diikuti oleh seluruh anggota Karang Taruna dengan rute sepanjang 5 km melewati jalan-jalan utama di wilayah Pandanwangi."
+           data-tanggal="17 Agustus 2024"
+           data-peserta="45 Anggota"
+           data-lokasi="Kelurahan Pandanwangi, Malang">
+        <div class="relative overflow-hidden">
+          <img src="galeri/gerakjalan.JPG" alt="Gerak Jalan" class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500" loading="lazy">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+            <p class="text-white text-sm font-medium">Klik untuk detail</p>
+          </div>
+        </div>
+        <div class="p-5">
+          <h3 class="font-bold text-xl text-green-700">Gerak Jalan HUT RI</h3>
+          <p class="text-gray-600 text-sm mt-2 line-clamp-2">Memperingati HUT Kemerdekaan RI ke-79</p>
+        </div>
+      </div>
+
+      <div class="gallery-item cursor-pointer bg-white shadow-lg rounded-2xl overflow-hidden hover:scale-105 hover:shadow-2xl transition-all duration-300 glow-hover group"
+           data-title="Malam Tasyakuran"
+           data-img="galeri/tasyakur.JPG"
+           data-desc="Acara tasyakuran dalam rangka syukuran atas terlaksananya berbagai kegiatan Karang Taruna. Dihadiri oleh warga sekitar, pengurus RT/RW, dan seluruh anggota Karang Taruna Graha Laksana Tidar."
+           data-tanggal="25 Juli 2024"
+           data-peserta="80+ Warga dan Anggota"
+           data-lokasi="Balai RW Graha Laksana Tidar">
+        <div class="relative overflow-hidden">
+          <img src="galeri/tasyakur.JPG" alt="Malam Tasyakuran" class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500" loading="lazy">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+            <p class="text-white text-sm font-medium">Klik untuk detail</p>
+          </div>
+        </div>
+        <div class="p-5">
+          <h3 class="font-bold text-xl text-green-700">Malam Tasyakuran</h3>
+          <p class="text-gray-600 text-sm mt-2 line-clamp-2">Syukuran bersama warga dan anggota</p>
+        </div>
+      </div>
+
+      <div class="gallery-item cursor-pointer bg-white shadow-lg rounded-2xl overflow-hidden hover:scale-105 hover:shadow-2xl transition-all duration-300 glow-hover group"
+           data-title="Lomba 17 Agustus"
+           data-img="galeri/lomba.jpg"
+           data-desc="Perlombaan dalam rangka HUT RI dengan berbagai cabang lomba seperti balap karung, tarik tambang, makan kerupuk, dan lainnya. Diikuti oleh anak-anak, remaja, dan dewasa dari lingkungan sekitar."
+           data-tanggal="17 Agustus 2024"
+           data-peserta="150+ Peserta"
+           data-lokasi="Lapangan Graha Laksana Tidar">
+        <div class="relative overflow-hidden">
+          <img src="galeri/lomba.jpg" alt="Lomba 17 Agustus" class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500" loading="lazy">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+            <p class="text-white text-sm font-medium">Klik untuk detail</p>
+          </div>
+        </div>
+        <div class="p-5">
+          <h3 class="font-bold text-xl text-green-700">Lomba 17 Agustus</h3>
+          <p class="text-gray-600 text-sm mt-2 line-clamp-2">Berbagai perlombaan seru untuk semua</p>
+        </div>
+      </div>
+
+      <div class="gallery-item cursor-pointer bg-white shadow-lg rounded-2xl overflow-hidden hover:scale-105 hover:shadow-2xl transition-all duration-300 glow-hover group"
+           data-title="Kerja Bakti Lingkungan"
+           data-img="IMG_2525.JPG"
+           data-desc="Kegiatan gotong royong membersihkan lingkungan perumahan. Seluruh anggota Karang Taruna bersama warga kompak membersihkan selokan, memangkas pohon, dan mengecat fasilitas umum."
+           data-tanggal="12 Juni 2024"
+           data-peserta="60 Anggota"
+           data-lokasi="Area Perumahan Graha Laksana Tidar">
+        <div class="relative overflow-hidden">
+          <img src="IMG_2525.JPG" alt="Kerja Bakti" class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500" loading="lazy">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+            <p class="text-white text-sm font-medium">Klik untuk detail</p>
+          </div>
+        </div>
+        <div class="p-5">
+          <h3 class="font-bold text-xl text-green-700">Kerja Bakti Lingkungan</h3>
+          <p class="text-gray-600 text-sm mt-2 line-clamp-2">Gotong royong membersihkan lingkungan</p>
+        </div>
+      </div>
+
+      <div class="gallery-item cursor-pointer bg-white shadow-lg rounded-2xl overflow-hidden hover:scale-105 hover:shadow-2xl transition-all duration-300 glow-hover group"
+           data-title="Pelatihan Kepemimpinan"
+           data-img="IMG_2400.JPG"
+           data-desc="Workshop pengembangan kepemimpinan dan soft skills untuk pengurus dan anggota Karang Taruna. Materi meliputi public speaking, manajemen organisasi, dan kewirausahaan sosial."
+           data-tanggal="5 Mei 2024"
+           data-peserta="35 Anggota"
+           data-lokasi="Aula Kelurahan Pandanwangi">
+        <div class="relative overflow-hidden">
+          <img src="IMG_2400.JPG" alt="Pelatihan" class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500" loading="lazy">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+            <p class="text-white text-sm font-medium">Klik untuk detail</p>
+          </div>
+        </div>
+        <div class="p-5">
+          <h3 class="font-bold text-xl text-green-700">Pelatihan Kepemimpinan</h3>
+          <p class="text-gray-600 text-sm mt-2 line-clamp-2">Workshop pengembangan skill anggota</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <div id="detail" class="hidden fixed inset-0 bg-black/70 backdrop-blur-sm flex items-center justify-center z-50 p-4">
+    <div class="bg-white rounded-3xl shadow-2xl max-w-4xl w-full grid md:grid-cols-2 overflow-hidden modal-enter">
+      <img id="detailImg" alt="Detail" class="w-full h-full object-cover">
+      <div class="p-8">
+        <h2 id="detailTitle" class="text-3xl font-bold text-green-700 mb-4"></h2>
+        <p id="detailDesc" class="text-gray-700 mb-6 leading-relaxed"></p>
+        <ul class="space-y-3 text-gray-700">
+          <li class="flex items-start">
+            <i class="bi bi-calendar-event text-green-600 text-xl mr-3 mt-0.5"></i>
+            <div><strong>Tanggal:</strong> <span id="detailTanggal"></span></div>
+          </li>
+          <li class="flex items-start">
+            <i class="bi bi-people text-green-600 text-xl mr-3 mt-0.5"></i>
+            <div><strong>Peserta:</strong> <span id="detailPeserta"></span></div>
+          </li>
+          <li class="flex items-start">
+            <i class="bi bi-geo-alt text-green-600 text-xl mr-3 mt-0.5"></i>
+            <div><strong>Lokasi:</strong> <span id="detailLokasi"></span></div>
+          </li>
+        </ul>
+        <button id="closeModal" class="mt-8 w-full px-6 py-3 bg-gradient-to-r from-green-600 to-emerald-600 hover:from-green-700 hover:to-emerald-700 text-white rounded-xl font-semibold transition-all duration-300 transform hover:scale-105">Tutup</button>
+      </div>
+    </div>
+  </div>
+
+
+  <section id="lokasi" class="container mx-auto px-6 py-20">
+    <div class="text-center mb-16">
+      <h2 class="text-4xl md:text-5xl font-bold bg-gradient-to-r from-green-700 to-emerald-600 bg-clip-text text-transparent mb-4">Lokasi & Kontak</h2>
+      <div class="w-24 h-1 bg-gradient-to-r from-green-600 to-emerald-600 mx-auto rounded-full"></div>
+    </div>
+    
+    <div class="grid lg:grid-cols-2 gap-8 items-start">
+      <!-- Map -->
+      <div class="order-2 lg:order-1">
+        <div class="rounded-2xl overflow-hidden shadow-xl">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3951.455082448947!2d112.58125457358341!3d-7.951833929223093!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7883004f945bd5%3A0x505152b286b4bf24!2sPerum.%20Graha%20Laksana%20Tidar!5e0!3m2!1sid!2sid!4v1753710228487!5m2!1sid!2sid"
             width="100%"
@@ -146,87 +275,90 @@
           </iframe>
         </div>
       </div>
-    </div>
-  </div>
-</section>
 
- end lokasi -->
-
-    <!-- Contact 
-    <section id="contact">
-      <div class="container">
-        <div class="row text-center mb-3">
-          <div class="col">
-            <h2>Contact Me</h2>
-          </div>
-        </div>
-        <div class="row justify-content-center">
-          <div class="col-md-6">
-            <div class="alert alert-success alert-dismissible fade show d-none my-alert" role="alert">
-              <strong>Terimakasih!</strong> Pesan anda sudah kami terima.
-              <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      <!-- Contact Info -->
+      <div id="contact" class="order-1 lg:order-2 space-y-6">
+        <div class="bg-gradient-to-br from-green-700 to-emerald-600 rounded-2xl p-8 text-white shadow-xl">
+          <h3 class="text-2xl font-bold mb-6 flex items-center">
+            <i class="bi bi-info-circle mr-3 text-green-200"></i>
+            Informasi Kontak
+          </h3>
+          
+          <div class="space-y-5">
+            <div class="flex items-start group">
+              <div class="bg-white/10 p-3 rounded-lg mr-4 group-hover:bg-white/20 transition-all">
+                <i class="bi bi-geo-alt-fill text-2xl text-green-200"></i>
+              </div>
+              <div class="flex-1">
+                <p class="font-semibold text-green-200 mb-1">Alamat</p>
+                <p class="text-white/90 leading-relaxed">Perumahan Graha Laksana Tidar<br>Kelurahan Pandanwangi, Kec. Blimbing<br>Kota Malang, Jawa Timur 65126</p>
+              </div>
             </div>
-            <form name="Contact-Form">
-              <div class="mb-3">
-                <label for="name" class="form-label">Nama Lengkap</label>
-                <input type="text" class="form-control" id="name" aria-describedby="name" name="nama" />
-              </div>
-              <div class="mb-3">
-                <label for="email" class="form-label">Email</label>
-                <input type="email" class="form-control" id="email" aria-describedby="email" name="email" />
-              </div>
-              <div class="mb-3">
-                <label for="pesan" class="form-label">Pesan</label>
-                <textarea class="form-control" id="pesan" rows="3" name="pesan"></textarea>
-              </div>
-              <button type="submit" class="btn btn-primary btn-kirim">Kirim</button>
 
-              <button class="btn btn-primary btn-loading d-none" type="button" disabled>
-                <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
-                Loading...
-              </button>
-            </form>
+            <div class="flex items-start group">
+              <div class="bg-white/10 p-3 rounded-lg mr-4 group-hover:bg-white/20 transition-all">
+                <i class="bi bi-telephone-fill text-2xl text-green-200"></i>
+              </div>
+              <div class="flex-1">
+                <p class="font-semibold text-green-200 mb-1">Telepon</p>
+                <a href="tel:+6281234567890" class="text-white/90 hover:text-white transition-colors">+62 812-3456-7890</a>
+              </div>
+            </div>
+
+            <div class="flex items-start group">
+              <div class="bg-white/10 p-3 rounded-lg mr-4 group-hover:bg-white/20 transition-all">
+                <i class="bi bi-envelope-fill text-2xl text-green-200"></i>
+              </div>
+              <div class="flex-1">
+                <p class="font-semibold text-green-200 mb-1">Email</p>
+                <a href="mailto:karangtaruna.glt@gmail.com" class="text-white/90 hover:text-white transition-colors">karangtaruna.glt@gmail.com</a>
+              </div>
+            </div>
+
+            <div class="flex items-start group">
+              <div class="bg-white/10 p-3 rounded-lg mr-4 group-hover:bg-white/20 transition-all">
+                <i class="bi bi-clock-fill text-2xl text-green-200"></i>
+              </div>
+              <div class="flex-1">
+                <p class="font-semibold text-green-200 mb-1">Jam Operasional</p>
+                <p class="text-white/90">Senin - Jumat: 16.00 - 20.00 WIB<br>Sabtu - Minggu: 08.00 - 12.00 WIB</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Social Media -->
+          <div class="mt-8 pt-6 border-t border-white/20">
+            <p class="font-semibold text-green-200 mb-3">Ikuti Kami</p>
+            <div class="flex gap-3">
+              <a href="https://www.instagram.com/karangtaruna.glt" class="bg-white/10 hover:bg-white/20 p-3 rounded-lg transition-all group">
+                <i class="bi bi-instagram text-xl group-hover:scale-110 transition-transform inline-block"></i>
+              </a>
+              <a href="https://www.tiktok.com/@karangtaruna.glt" class="bg-white/10 hover:bg-white/20 p-3 rounded-lg transition-all group">
+                <i class="bi bi-tiktok text-xl group-hover:scale-110 transition-transform inline-block"></i>
+              </a>
+              <a href="#" class="bg-white/10 hover:bg-white/20 p-3 rounded-lg transition-all group">
+                <i class="bi bi-twitter text-xl group-hover:scale-110 transition-transform inline-block"></i>
+              </a>
+            </div>
           </div>
         </div>
       </div>
-    </section>
- Akhir Contact -->
-
-<section class="container my-5 text-center">
-  <p class="text-muted">Worked with</p>
-  <div class="row justify-content-center">
-    <div class="col-auto">
-      <!-- Visual Studio Code -->
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="Visual Studio Code" height="35">
     </div>
-    <div class="col-auto">
-      <!-- Bootstrap -->
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap" height="35">
+  </section> -->
+
+  <!-- Footer -->
+  <footer class="bg-gradient-to-r from-gray-900 to-gray-800 text-gray-300 py-8 mt-10">
+    <div class="container mx-auto text-center px-6">
+      <div class="mb-4">
+        <h3 class="text-2xl font-bold bg-gradient-to-r from-green-400 to-emerald-400 bg-clip-text text-transparent">Karang Taruna GLT</h3>
+      </div>
+      <p class="text-sm mb-4">Organisasi Kepemudaan Graha Laksana Tidar</p>
+      <div class="w-16 h-0.5 bg-gradient-to-r from-green-600 to-emerald-600 mx-auto mb-4"></div>
+      <p class="text-xs text-gray-400">Created with <i class="bi bi-heart-fill text-red-500"></i> by Aru And Fardipnama</p>
+      <p class="text-xs text-gray-400 mt-2">&copy; 2025 Karang Taruna GLT. All rights reserved.</p>
     </div>
-    <div class="col-auto">
-      <!-- HTML5 -->
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" height="35">
-    </div>
-    <div class="col-auto">
-      <!-- CSS -->
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" height="35">
-    </div>
-    <div class="col-auto">
-      <!-- GitHub -->
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" height="35" style="filter: invert(1);" />
-    </div>
-  </div>
-</section>
+  </footer>
 
-
-
-<!-- footer -->
-
-    <footer class="text-center py-4 text-white bg-dark">
-      <p>Created By <i class="bi bi-heart-fill text-danger"></i> Aru And Fardipnama</p>
-    </footer>
-    <!-- akhir footer -->
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  </body>
+  <script src="script.js"></script>
+</body>
 </html>

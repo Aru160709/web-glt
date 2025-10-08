@@ -1,63 +1,227 @@
-body {
-  background-color: #0e0e0e;
-  color: white;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+/* Custom Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
-nav {
-  background-color: #1a1a1a;
+@keyframes float {
+  0%, 100% { 
+    transform: translateY(0px); 
+  }
+  50% { 
+    transform: translateY(-20px); 
+  }
 }
 
-.hero {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-  padding: 8rem 2rem;
+@keyframes modalEnter {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
 
-.hero-text {
-  max-width: 500px;
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
 }
 
-.hero img {
-  width: 300px;
-  height: 300px;
-  object-fit: cover;
-  border-radius: 50%;
-  box-shadow: 0 0 12px rgba(255, 255, 255, 0.1);
+/* Utility Classes */
+.animate-fade-in-up {
+  animation: fadeInUp 1s ease-out;
 }
 
-.hero .btn {
-  background-color: #32cd32;
-  color: white;
-  font-weight: bold;
-  box-shadow: 0 4px 16px rgba(0, 255, 0, 0.2);
-  transition: 0.3s;
+.animate-float {
+  animation: float 3s ease-in-out infinite;
 }
 
-.hero .btn:hover {
-  background-color: #28a428;
+/* Navbar Styles */
+.navbar-blur {
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.95);
 }
 
-footer {
-  background-color: #1a1a1a;
-  color: white;
-}
-
-.map-responsive {
+/* Mobile Menu */
+.mobile-menu {
+  max-height: 0;
   overflow: hidden;
-  padding-bottom: 56.25%;
-  position: relative;
-  height: 0;
-  border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: max-height 0.3s ease-out;
 }
 
-.map-responsive iframe {
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 100%;
-  position: absolute;
+.mobile-menu.show {
+  max-height: 400px;
+}
+
+/* Gallery Hover Effects */
+.glow-hover {
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.glow-hover:hover {
+  box-shadow: 0 10px 40px rgba(34, 197, 94, 0.3);
+  transform: translateY(-8px);
+}
+
+/* Line Clamp */
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.line-clamp-3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* Modal Styles */
+#detail {
+  transition: opacity 0.3s ease;
+}
+
+#detail.show {
+  display: flex !important;
+}
+
+.modal-enter {
+  animation: modalEnter 0.3s ease-out;
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, #16a34a, #10b981);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(to bottom, #15803d, #059669);
+}
+
+/* Smooth Scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .animate-float {
+    animation: none;
+  }
+  
+  #detail > div {
+    grid-template-columns: 1fr;
+    max-height: 90vh;
+    overflow-y: auto;
+  }
+  
+  #detailImg {
+    max-height: 300px;
+  }
+}
+
+/* Focus Styles for Accessibility */
+a:focus,
+button:focus {
+  outline: 2px solid #16a34a;
+  outline-offset: 2px;
+}
+
+/* Image Loading */
+img {
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+}
+
+/* Prevent text selection on interactive elements */
+.cursor-pointer {
+  user-select: none;
+}
+
+/* Card Shadow Transitions */
+.shadow-lg {
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.shadow-xl {
+  transition: box-shadow 0.3s ease;
+}
+
+/* Gradient Text Fix for older browsers */
+.bg-clip-text {
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Button Active State */
+button:active {
+  transform: scale(0.95);
+}
+
+a:active {
+  transform: scale(0.98);
+}
+
+/* Loading State */
+.loading {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+/* Gallery Card Improvements */
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+}
+
+.gallery-item img {
+  transition: transform 0.5s ease;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.1);
+}
+
+/* Modal Backdrop */
+#detail {
+  backdrop-filter: blur(8px);
+}
+
+/* Smooth transitions for all interactive elements */
+* {
+  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Override for elements that shouldn't have transitions */
+img, video {
+  transition: none;
+}
+
+img.object-cover {
+  transition: transform 0.5s ease;
 }
